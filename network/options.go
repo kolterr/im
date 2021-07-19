@@ -7,8 +7,6 @@ import (
 )
 
 type Options struct {
-	Broker      broker.Broker
-	Discover    discover.Discover
 	Decoder     Decoder
 	Address     string
 	MaxConn     int
