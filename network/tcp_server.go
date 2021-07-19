@@ -1,7 +1,7 @@
 package network
 
 import (
-	"github.com/kolterr/hellochat/pkg/log"
+	"github.com/kolterr/im/log"
 	libAtomic "github.com/kolterr/lib/atomic"
 	"net"
 	"sync"

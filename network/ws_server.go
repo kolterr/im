@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/gorilla/websocket"
-	"github.com/kolterr/hellochat/pkg/log"
+	"github.com/kolterr/im/log"
 	"net"
 	"net/http"
 	"sync/atomic"
