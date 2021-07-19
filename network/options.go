@@ -2,8 +2,6 @@ package network
 
 import (
 	"crypto/tls"
-	"github.com/kolterr/hellochat/pkg/broker"
-	"github.com/kolterr/hellochat/pkg/discover"
 )
 
 type Options struct {
@@ -24,18 +22,6 @@ func newOptions(opts ...Option) Options {
 		o(&opt)
 	}
 	return opt
-}
-
-func Broker(broker broker.Broker) Option {
-	return func(options *Options) {
-		options.Broker = broker
-	}
-}
-
-func Discover(discover discover.Discover) Option {
-	return func(options *Options) {
-		options.Discover = discover
-	}
 }
 
 func Decode(decoder Decoder) Option {
